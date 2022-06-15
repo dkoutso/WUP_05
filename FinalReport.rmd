@@ -56,6 +56,15 @@ colPerc(table1)
 The table shows that if a  female where to get the vaccine, she will be about 1.4x more like to contract the virus.  
 
 ## Inferential Results
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
+
+the P-value is  0.000007 and is less than 0.05. Based on this value, we reject the null hypothesis. 
+
+The fisher's exact table is also significant in showing that we reject the the null hypothesis because P-value is 0.000006.  
 
 <!--State hypothesis clearly.  Make sure your discussion of the inferential test covers all the aspects that the test output produces, such as test statistic, p-value etc.  Make a decision about the null hypothesis, explain the assumptions on which the selected test/procedure was based, and why the chosen procedure satisfys the assumptions and is appropriate to answer the research question!-->
 
